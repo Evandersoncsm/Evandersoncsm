@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evanderson Silva - Portfólio</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 60px 15px;
+        }
+
+        .profile-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://getwallpapers.com/wallpaper/full/2/4/e/490129.jpg) no-repeat center center/cover;
+            padding: 60px 15px;
+            text-align: center;
+        }
+
+        .profile-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00d4ff;
+        }
+
+        .profile-header p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .profile-header .role {
+            color: #00d4ff;
+            font-size: 1.5rem;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-image img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid #00d4ff;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #00d4ff;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #00d4ff;
+            display: block;
+            margin: 10px auto 0;
+        }
+
+        .section-content {
+            text-align: center;
+        }
+
+        .technologies-list {
+            list-style: none;
+            padding: 0;
+            font-size: 1rem;
+        }
+
+        .technologies-list li {
+            display: inline-block;
+            margin: 10px 15px;
+            background: #1f1f1f;
+            padding: 10px 20px;
+            border-radius: 30px;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+        }
+
+        .technologies-list li:hover {
+            background: #00d4ff;
+            transform: scale(1.1);
+        }
+
+        .contact-form {
+            background-color: #1c1c1c;
+            padding: 40px 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-form .form-control {
+            background-color: #2c2c2c;
+            color: #fff;
+            border: none;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .contact-form .form-control::placeholder {
+            color: #ccc;
+        }
+
+        .contact-form .btn {
+            background-color: #00d4ff;
+            border: none;
+            color: #000;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .contact-form .btn:hover {
+            background-color: #00b3e0;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="profile-header">
+        <div class="container">
+            <h1>Evanderson Silva</h1>
+            <p class="role">Desenvolvedor Full Stack</p>
+            <div class="profile-image">
+                <img src="https://i.imgur.com/1ekB4f8.jpeg" alt="Evanderson Silva" loading="lazy">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section>
+                <h2 class="section-title">Realizações de Destaque</h2>
+                <div class="section-content">
+                    <p>Co-Fundador e Diretor da Nexus</p>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Tecnologias</h2>
+                <div class="section-content">
+                    <ul class="technologies-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Java Spring Boot</li>
+                        <li>Python</li>
+                        <li>NodeJS</li>
+                        <li>SQL</li>
+                        <li>BI</li>
+                        <li>Linux</li>
+                        <li>Desenvolvimento Ágil com Java Avançado - ITA</li>
+                        <li>Especialista em Segurança Cibernética pela IBM</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title">Contato</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" rows="4" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Evanderson Silva. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            const whatsappNumber = '5511994842804';
+            const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=Nome: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMensagem: ${encodeURIComponent(message)}`;
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+
+</html>
